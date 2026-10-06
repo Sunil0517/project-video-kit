@@ -1,0 +1,21 @@
+{
+  "name": "project-video-kit",
+  "version": "0.1.0",
+  "description": "Record and render narrated product tours from any web project",
+  "type": "module",
+  "bin": { "project-video": "./dist/cli.js" },
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./browser": { "types": "./dist/toolkit/browser.d.ts", "default": "./dist/toolkit/browser.js" },
+    "./stage": { "types": "./dist/toolkit/stage.d.ts", "default": "./dist/toolkit/stage.js" }
+  },
+  "files": ["dist", "template", "docs", "README.md", "LICENSE"],
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "test": "node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.9.0" },
+  "license": "MIT"
+}
