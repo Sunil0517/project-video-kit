@@ -1,6 +1,6 @@
 # Project Video Kit
 
-Record a running web app with a scripted cursor, then render a product video with optional narration, captions, MP4, WebM and a poster. The CLI runs in any web project; it does not depend on Next.js or TDC. This project has not been published to the npm registry. Pack it locally first with `npm pack`, or publish it under an available package name before using a registry install.
+Record a running web app with a scripted cursor, then render a product video with optional narration, captions, MP4, WebM and a poster. The CLI runs in any web project; it does not depend on Next.js. This project has not been published to the npm registry. Pack it locally first with `npm pack`, or publish it under an available package name before using a registry install.
 
 ## Requirements
 
